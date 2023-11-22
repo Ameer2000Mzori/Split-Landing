@@ -33,7 +33,29 @@ const psHandler = (): void => {
   `;
 };
 
-const xbHandler = (): void => {};
+const xbHandler = (): void => {
+  headerPage.innerHTML = "";
+  headerPage.innerHTML = `
+    <section class="Xboxs-Wrapper">
+        <div class="Xboxs-Text-Wrapper">
+          <h1>XBOX SERIES X</h1>
+          <ol>
+            <li>BEST CONSOLE</li>
+            <li>BEST SELLER</li>
+            <li>BEST DLC</li>
+          </ol>
+          <button>
+            <a href="https://www.xbox.com/en-US?xr=mebarnav" target="_blank"
+              >BUY NOW</a
+            >
+          </button>
+          <button>
+            <a href="./index.html">GO BACK</a>
+          </button>
+        </div>
+      </section>
+    `;
+};
 
 // our eventlinsters
 psBuyBtn.addEventListener("click", psHandler);
